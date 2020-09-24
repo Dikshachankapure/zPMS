@@ -1,0 +1,36 @@
+{
+	"Employees": [{
+			"EmpIcon": "sap-icon://customer",
+			"EmpName": "Alex Ramsley",
+			"Status": "Goal Settings",
+			"ActionPending": "Aprroval",
+			"Comments": "Lack of knowledge in technical domain, Get some experties in technical domain."
+		}, {
+			"EmpIcon": "sap-icon://customer",
+			"EmpName": "Linda Miller",
+			"Status": "Goal Settings",
+			"ActionPending": "Aprroval",
+			"Comments": "You have manage the team very well . The feedback for training conducted were very positive "
+		}, {
+			"EmpIcon": "sap-icon://customer",
+			"EmpName": "Sid Merve",
+			"Status": "Year end Review",
+			"ActionPending": "Aprroval",
+			"Comments": "Good performance in code jam start delivering some internal training "
+		}, {
+			"EmpIcon": "sap-icon://customer",
+			"EmpName": "Arjun Nagaranjan",
+			"Status": "Year end Review",
+			"ActionPending": "Aprroval",
+			"Comments": "You are very strong functional domain .Having sonme knowledge about technical stuff will boost your carreer "
+		}, {
+			"EmpIcon": "sap-icon://customer",
+			"EmpName": "Ravi Kumar",
+			"Status": "Evaluation",
+			"ActionPending": "Aprroval",
+			"Comments": "You are very strong functional domain .Having sonme knowledge about technical stuff will boost your carreer "
+		}
+
+	]
+
+}

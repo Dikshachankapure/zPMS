@@ -1,0 +1,32 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="pms.ZPMS.controller.View4"
+	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form">
+	<App>
+		<pages>
+			<Page title="Goals Details" showNavButton="true" navButtonPress="Gotopage3">
+				<content>
+					<VBox class="sapUiSmallMargin">
+						<f:SimpleForm id="SimpleFormChange354" editable="true" layout="ResponsiveGridLayout" title="Individual Golas" labelSpanXL="3" labelSpanL="3"
+							labelSpanM="3" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="1"
+							columnsL="1" columnsM="1" singleContainerFullSize="false">
+							<f:content>
+								<Label text="Title"/>
+								<Text id="title1"/>
+								<Label text="Description"/>
+								<Text id="desc"/>
+								<Label text="Progress"/>
+								<ProgressIndicator class="sapUiSmallMarginBottom" percentValue="50" displayValue="50%" showValue="true" state="Success"/>
+								<Label text="Due Date"/>
+								<Text id="DP1"/>
+							</f:content>
+						</f:SimpleForm>
+					</VBox>
+					<FeedInput post="onPost" icon="test-resources/sap/m/images/dronning_victoria.jpg" class="sapUiSmallMarginTopBottom"/>
+					<List showSeparators="Inner" items="{M7>/EntryCollection}">
+						<FeedListItem sender="{M7>Author}" icon="{M7>AuthorPicUrl}" senderPress="onSenderPress" iconPress="onIconPress" iconDensityAware="false"
+							info="{M7>Type}" timestamp="{M7>Date}" text="{M7>Text}" convertLinksToAnchorTags="All"/>
+					</List>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

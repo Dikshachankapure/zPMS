@@ -1,0 +1,35 @@
+{
+    "application": {
+        "id": "",
+        "title": "pms.ZPMS.ZPMS",
+        "description": "Employee yearly performance application",
+        "type": "SAP_UI5_Component",
+        "componentUrl": "/",
+        "appUrl": "#ZPMS-Display",
+        "navigationComponentName": "pms.ZPMS",
+        "intentSemanticObject": "ZPMS",
+        "intentAction": "Display",
+        "html5ApplicationName": "zpms",
+        "HCPParentApplicationName": ""
+    },
+    "assignment": {
+        "groups": [
+            "5611288b-8543-4891-9fef-ae9a5fb9a701-1563172289966"
+        ],
+        "contentPackages": [
+            "3468b0c9-2e0f-412d-9c02-3b940f8045a0-1563172250431"
+        ],
+        "categories": []
+    },
+    "tile": {
+        "type": "StaticTile",
+        "title": "ZPMS",
+        "subtitle": "Zpms",
+        "searchKeywords": "ZPMS,Zpms",
+        "displayIconUrl": "sap-icon://approvals",
+        "displayInfoText": "",
+        "size": "1x1",
+        "serviceURL": "",
+        "refreshInterval": ""
+    }
+}

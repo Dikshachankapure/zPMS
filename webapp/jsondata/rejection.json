@@ -1,0 +1,17 @@
+{
+	"RejectionNotes": [{
+			"EmpIcon": "sap-icon://customer",
+			"EmpName": "Alex Ramsley",
+			"Comments": "Lack of knowledge in technical domain, Get some experties in technical domain."
+		},  {
+			"EmpIcon": "sap-icon://customer",
+			"EmpName": "Sid Merve",
+			"Comments": "Improve Your performance  in coding "
+		}, {
+			"EmpIcon": "sap-icon://customer",
+			"EmpName": "Arjun Nagaranjan",
+			"Comments": "Improve Your performance  in coding  "
+		}
+	]
+
+}

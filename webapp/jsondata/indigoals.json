@@ -1,0 +1,23 @@
+{
+	"IndiGoals": [{
+
+			"Title": "Automation",
+			"Description": "Create an automation tools which would do the repitative job we usually do daily thus saving our time for doing imporatant things",
+				"DueDate": "Mar 15 2019"
+		},
+		{
+
+			"Title": "Certification",
+			"Description": "Get certified in L&D Module of success factor",
+				"DueDate": "feb 15 2019"
+		},
+			{
+
+			"Title": "Learning",
+			"Description": "Get Experties in SAP Authorization",
+				"DueDate": "ap 15 2019"
+		}
+
+	]
+
+}

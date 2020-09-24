@@ -1,0 +1,35 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="pms.ZPMS.controller.View2"
+	xmlns:html="http://www.w3.org/1999/xhtml" 	xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form">
+	<App>
+		<pages>
+			<Page title="Goals For My Team"  showNavButton="true" navButtonPress="Gotopage1">
+				<content>
+					<VBox class="sapUiSmallMargin">
+						<f:SimpleForm id="SimpleFormChange354" editable="true" title="New Team Goal" layout="ResponsiveGridLayout" labelSpanXL="3" labelSpanL="3"
+							labelSpanM="3" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="1"
+							columnsL="1" columnsM="1" singleContainerFullSize="false">
+							<f:content>
+									<Label text="GoalNo" required="true"/>
+								<Input id="gl1" value="0" visible="false"/>
+								<Label text="Title" required="true"/>
+								<Input type="Text" id="title1"/>
+								<Label text="Description" required="true"/>
+								<Input type="Text" id="desc"/>
+								<Label text="Due Date" required="true"/>
+								<DatePicker id="DP1" placeholder="Enter Date ..." change="handleChange" class="sapUiSmallMarginBottom"/>
+							</f:content>
+						</f:SimpleForm>
+					</VBox>
+				</content>
+				<footer>
+					<Bar>
+						<contentRight>
+							<Button text="Save" press="OnSave"/>
+							<Button text="Clear" press="OnClear"/>
+						</contentRight>
+					</Bar>
+				</footer>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

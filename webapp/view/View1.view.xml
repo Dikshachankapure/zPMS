@@ -1,0 +1,164 @@
+<mvc:View controllerName="pms.ZPMS.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:core="sap.ui.core">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="MANAGER">
+					<Toolbar>
+						<Label text="Select Year"/>
+						<ComboBox id="cbyear" change="onChangeProdGroup"  selectedKey="0">
+							<core:Item key="0" text="2019" id="cb1"/>
+							<core:Item key="1" text="2018" id="cb2"/>
+						</ComboBox>
+						<Button text="Go" type="Emphasized" press="onGo" ariaLabelledBy="editButtonLabel"/>
+					</Toolbar>
+					<IconTabBar id="idIconTabBarMulti" expanded="{device>/isNoPhone}" class="sapUiResponsiveContentPadding">
+						<items>
+							<IconTabFilter text="My Team" icon="sap-icon://group">
+								<Table id="tblEmployees" items="{M1>/Employees}" inset="false" class="sapUiResponsiveMargin" growing="true" growingThreshold="10"
+									growingScrollToLoad="true" width="auto">
+									<columns>
+										<Column width="12em"></Column>
+										<Column width="12em">
+											<Text text="Employee"/>
+										</Column>
+										<Column minScreenWidth="Tablet" demandPopin="true">
+											<Text text="Status"/>
+										</Column>
+									</columns>
+									<items>
+										<ColumnListItem type="Navigation" press="onSelect">
+											<cells>
+												<core:Icon src="{M1>EmpIcon}"/>
+												<Text text="{M1>EmpName}"/>
+												<Text text="{M1>Status}"/>
+											</cells>
+										</ColumnListItem>
+									</items>
+								</Table>
+								<Table id="tblEmp" items="{M1>/Employees}" inset="false" class="sapUiResponsiveMargin" growing="true" growingThreshold="10"
+									growingScrollToLoad="true" width="auto" visible="false">
+									<columns>
+										<Column width="12em"></Column>
+										<Column width="12em">
+											<Text text="Employee"/>
+										</Column>
+										<Column minScreenWidth="Tablet" demandPopin="true">
+											<Text text="Comments"/>
+										</Column>
+										<Column minScreenWidth="Tablet" demandPopin="true">
+											<Text text="Rating"/>
+										</Column>
+									</columns>
+									<items>
+										<ColumnListItem type="Navigation" press="onSelect">
+											<cells>
+												<core:Icon src="{M1>EmpIcon}"/>
+												<Text text="{M1>EmpName}"/>
+												<Text text="{M1>Comments}"/>
+												<RatingIndicator id="RI_default1" maxValue="5" class="sapUiSmallMarginBottom" value="4" tooltip="Rating Tooltip"/>
+											</cells>
+										</ColumnListItem>
+									</items>
+								</Table>
+							</IconTabFilter>
+							<IconTabFilter text="Pending" icon="sap-icon://pending">
+								<Table id="tblEmployeesP" items="{M2>/Pending}" inset="false" class="sapUiResponsiveMargin" growing="true" growingThreshold="10"
+									growingScrollToLoad="true" width="auto">
+									<columns>
+										<Column width="12em"></Column>
+										<Column width="12em">
+											<Text text="Employee"/>
+										</Column>
+										<Column minScreenWidth="Tablet" demandPopin="true">
+											<Text text="Status"/>
+										</Column>
+										<Column minScreenWidth="Tablet" demandPopin="true">
+											<Text text="Action Pending"/>
+										</Column>
+									</columns>
+									<items>
+										<ColumnListItem type="Navigation" press="onEdit">
+											<cells>
+												<core:Icon src="{M2>EmpIcon}"/>
+												<Text text="{M2>EmpName}"/>
+												<Text text="{M2>Status}"/>
+												<Text text="{M2>ActionPending}"/>
+											</cells>
+										</ColumnListItem>
+									</items>
+								</Table>
+							</IconTabFilter>
+							<IconTabFilter text="Set teams Goals" icon="sap-icon://goal">
+								<Table id="tblEmployeesT" items="{M3>/EmpGoals}" inset="false" class="sapUiResponsiveMargin" growing="true" growingThreshold="10"
+									growingScrollToLoad="true" width="auto">
+									<headerToolbar>
+										<OverflowToolbar>
+											<content>
+												<Title text="Goals for my Team" level="H2"/>
+												<ToolbarSpacer/>
+												<Button icon="sap-icon://add" press="onAdd" type="Emphasized"/>
+											</content>
+										</OverflowToolbar>
+									</headerToolbar>
+									<columns>
+											<Column width="12em" visible="false">
+											<Text text="GoalNo"/>
+										</Column>
+										<Column width="12em">
+											<Text text="Title"/>
+										</Column>
+										<Column minScreenWidth="Tablet" demandPopin="true">
+											<Text text="Description"/>
+										</Column>
+										<Column width="12em"></Column>
+										<Column width="12em"></Column>
+									</columns>
+									<items>
+										<ColumnListItem type="Navigation" >
+											<cells>
+												<Text text="{M3>GoalNo}"/>
+												<Text text="{M3>Title}"/>
+												<Text text="{M3>Description}"/>
+												<Button icon="sap-icon://edit" type="Transparent" press="onEdit" ariaLabelledBy="actionButtonLabel"/>
+												<Button icon="sap-icon://decline" type="Reject" press="onCancel" ariaLabelledBy="actionButtonLabel"/>
+											</cells>
+										</ColumnListItem>
+									</items>
+								</Table>
+							</IconTabFilter>
+							<IconTabFilter text="Set Ratings" icon="sap-icon://favorite" >
+								<Table id="tblEmployeesSetGoal" items="{M4>/Ratings}" inset="false" class="sapUiResponsiveMargin" growing="true" growingThreshold="10"
+									growingScrollToLoad="true" width="auto">
+									<columns>
+										<Column width="12em"></Column>
+										<Column width="12em">
+											<Text text="Employee"/>
+										</Column>
+										<Column minScreenWidth="Tablet" demandPopin="true">
+											<Text text="Comments"/>
+										</Column>
+										<Column minScreenWidth="Tablet" demandPopin="true">
+											<Text text="Ratings"/>
+										</Column>
+									</columns>
+									<items>
+										<ColumnListItem type="Navigation" press="onEdit">
+											<cells>
+												<core:Icon src="{M4>EmpIcon}"/>
+												<Text text="{M4>EmpName}"/>
+												<Input id="comment1" type="Text"/>
+												<RatingIndicator id="RI_default" maxValue="5" class="sapUiSmallMarginBottom" value="0" tooltip="Rating Tooltip"/>
+											</cells>
+										</ColumnListItem>
+									</items>
+								</Table>
+								<Button text="Save" type="Emphasized" press="onPressSave"/>
+							</IconTabFilter>
+						</items>
+					</IconTabBar>
+					<content></content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

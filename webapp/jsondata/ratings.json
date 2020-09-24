@@ -1,0 +1,12 @@
+{
+	"Ratings": [{
+			"EmpIcon": "sap-icon://customer",
+			"EmpName": "Alex Ramsley"
+		}, {
+			"EmpIcon": "sap-icon://customer",
+			"EmpName": "Linda Miller"
+		}
+
+	]
+
+}

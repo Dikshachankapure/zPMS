@@ -1,0 +1,29 @@
+{
+	"Pending": [{
+			"EmpIcon": "sap-icon://customer",
+			"EmpName": "Alex Ramsley",
+			"Status": "Goal Settings",
+			"ActionPending": "Aprroval"
+		}, {
+			"EmpIcon": "sap-icon://customer",
+			"EmpName": "Linda Miller",
+			"Status": "Goal Settings",
+			"ActionPending": "Aprroval"
+
+		}, {
+			"EmpIcon": "sap-icon://customer",
+			"EmpName": "Sid Merve",
+			"Status": "Year end Review",
+			"ActionPending": "Rating"
+			
+		}, {
+			"EmpIcon": "sap-icon://customer",
+			"EmpName": "Arjun Nagaranjan",
+			"Status": "Year end Review",
+			"ActionPending": "Rating"
+			
+		}
+
+	]
+
+}
